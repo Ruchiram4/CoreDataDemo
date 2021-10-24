@@ -43,10 +43,10 @@ class ViewController: UIViewController {
         
         let alert = UIAlertController.init(title: "Add person", message: "Please enter details about the person to add.", preferredStyle: .alert)
         alert.addTextField { textFieldName in
-            textFieldName.placeholder = "Enter name"
+            textFieldName.placeholder = "Please enter name."
         }
         alert.addTextField { textFieldAge in
-            textFieldAge.placeholder = "Enter age"
+            textFieldAge.placeholder = "Please enter age."
         }
         alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { alertAction in
             
