@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController {
 
@@ -32,14 +33,20 @@ class HomeViewController: UIViewController {
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
         self.navigationItem.rightBarButtonItem = addButton
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        dbHandler = DBHandler(withContext: context)
         syncWithDB()
         
     }
     
+    public init(withContext: NSManagedObjectContext) {
+        super.init(nibName: nil, bundle: nil)
+        self.dbHandler = Factory.createDBHandler(withContext: withContext)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("You should not use this init method.")
+    }
+    
     @objc func addButtonPressed() {
-        print("Add button pressed..")
         
         let alert = UIAlertController.init(title: "Add person", message: "Please enter details about the person to add.", preferredStyle: .alert)
         alert.addTextField { textFieldName in

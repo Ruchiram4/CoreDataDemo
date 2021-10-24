@@ -14,4 +14,9 @@ class Factory {
         let dbHandler = DBHandler(withContext: withContext)
         return dbHandler
     }
+    
+    static func createHomeViewController(withContext: NSManagedObjectContext) -> HomeViewController {
+        let homeVC = HomeViewController(withContext: withContext)
+        return homeVC
+    }
 }
