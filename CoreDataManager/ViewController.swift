@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     let tableView = UITableView()
     var arrayOfPeople = [PersonEntity]()
-    var dbHandler: DBHandler?
+    var dbHandler: DBHandlerProtocol?
     
     override func viewDidLoad() {
         

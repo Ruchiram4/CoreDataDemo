@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F574C942725E02B0069409A /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F574C932725E02B0069409A /* Factory.swift */; };
 		4FE6BDAD2723D011008CB7F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6BDAC2723D011008CB7F5 /* AppDelegate.swift */; };
 		4FE6BDAF2723D011008CB7F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6BDAE2723D011008CB7F5 /* SceneDelegate.swift */; };
 		4FE6BDB12723D011008CB7F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6BDB02723D011008CB7F5 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F574C932725E02B0069409A /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		4FE6BDA92723D011008CB7F5 /* CoreDataManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE6BDAC2723D011008CB7F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FE6BDAE2723D011008CB7F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				4FE6BDBD2723D015008CB7F5 /* Info.plist */,
 				4FE6BDB52723D011008CB7F5 /* CoreDataManager.xcdatamodeld */,
 				4FE6BDE32723D2A8008CB7F5 /* DBHandler.swift */,
+				4F574C932725E02B0069409A /* Factory.swift */,
 			);
 			path = CoreDataManager;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F574C942725E02B0069409A /* Factory.swift in Sources */,
 				4FE6BDE12723D128008CB7F5 /* PersonEntity+CoreDataClass.swift in Sources */,
 				4FE6BDE42723D2A8008CB7F5 /* DBHandler.swift in Sources */,
 				4FE6BDB12723D011008CB7F5 /* ViewController.swift in Sources */,
